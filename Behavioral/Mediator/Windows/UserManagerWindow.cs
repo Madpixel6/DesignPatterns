@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Mediator.Windows
 {
-    class UserManagerWindow : Window
+    internal class UserManagerWindow : Window
     {
         public UserManagerWindow(IMediator mediator) : base(mediator) { }
 
         public override void Notify(string message)
         {
             var originalColor = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"[{nameof(UserManagerWindow)}] {message}");
             Console.ForegroundColor = originalColor;
         }

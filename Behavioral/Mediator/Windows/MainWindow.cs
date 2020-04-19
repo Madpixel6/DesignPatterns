@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Mediator.Windows
 {
@@ -10,7 +8,10 @@ namespace Mediator.Windows
 
         public override void Notify(string message)
         {
-            throw new NotImplementedException();
+            var originalColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine($"[{nameof(MainWindow)}] {message}");
+            Console.ForegroundColor = originalColor;
         }
     }
 }

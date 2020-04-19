@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Mediator.Windows
 {
@@ -12,7 +10,7 @@ namespace Mediator.Windows
         {
             var originalColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"[{nameof(UserManagerWindow)}] {message}");
+            Console.WriteLine($"[{nameof(OptionsWindow)}] {message}");
             Console.ForegroundColor = originalColor;
         }
     }

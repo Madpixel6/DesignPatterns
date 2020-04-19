@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Mediator
+﻿namespace Mediator
 {
-    interface IMediator
+    internal interface IMediator
     {
         void Notify(Window window, string message);
         void Register(Window window);
